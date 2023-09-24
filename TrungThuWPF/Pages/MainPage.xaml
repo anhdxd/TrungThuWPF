@@ -1,0 +1,100 @@
+﻿<Page
+    x:Class="TrungThuWPF.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:TrungThuWPF.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainPage"
+    d:DesignHeight="720"
+    d:DesignWidth="1280"
+    FontSize="30"
+    mc:Ignorable="d">
+
+    <Grid>
+        <TextBlock
+            Width="574"
+            Height="85"
+            Margin="0,122,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="60"
+            FontWeight="Bold"
+            Foreground="Red"
+            Text="RƯỚC ĐÈN ONLINE"
+            TextWrapping="Wrap" />
+        <TextBlock
+            Width="680"
+            Height="68"
+            Margin="0,253,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="50"
+            FontWeight="Bold"
+            Foreground="Black"
+            Text="Bạn muốn rước đèn cùng ai?"
+            TextWrapping="Wrap" />
+        <Canvas Name="canvas">
+            <Button
+                Name="btnnoloveoke"
+                Canvas.Left="237"
+                Canvas.Top="451"
+                Width="350"
+                Height="80"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Background="White"
+                Content="1 MÌNH VẪN ỔN 😗"
+                Cursor="Hand"
+                FontWeight="Bold"
+                Foreground="Black"
+                MouseMove="btnnoloveoke_MouseMove"
+                Style="{DynamicResource ButtonStyle1}" />
+
+            <Button
+                x:Name="btnHaveLove"
+                Canvas.Left="735"
+                Canvas.Top="451"
+                Width="350"
+                Height="80"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Background="Green"
+                Content="CÙNG NGƯỜI YÊU ❤"
+                Cursor="Hand"
+                FontWeight="Bold"
+                Foreground="White"
+                MouseMove="btnHaveLove_MouseMove"
+                Style="{DynamicResource ButtonStyle1}" />
+            <Button
+                Canvas.Left="490"
+                Canvas.Top="568"
+                Width="350"
+                Height="80"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="#349beb"
+                Click="Button_Click"
+                Content="1 MÌNH 😒"
+                Cursor="Hand"
+                FontWeight="Bold"
+                Foreground="White"
+                Style="{DynamicResource ButtonStyle1}" />
+        </Canvas>
+        <Border
+            Name="nolove"
+            Margin="0,212,10,169"
+            Background="White"
+            CornerRadius="20"
+            Visibility="Hidden">
+            <TextBlock
+                Width="1190"
+                Height="196"
+                Margin="0,79,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="70"
+                Foreground="Black"><Run Text="Đừng buồn khi cậu chưa có người yêu" /><LineBreak /><Run Text="Tớ sẽ rước đèn online cùng cậu" /></TextBlock>
+        </Border>
+    </Grid>
+</Page>
